@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Times New Roman', Times, serif;
+}
+header {
+	height: 100vh;
+	position: relative;
+}
+.vid-bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+.nav-area {
+	height: 60px;
+	position: absolute;
+	width: 100%;
+}
+.logo {
+	margin: 10px 50px;
+	height: 60px;
+	float: left;
+	color: #fff;
+	font-size: 35px;
+	text-transform: capitalize;
+}
+.menu-area {
+	float: center   ;
+	list-style: none;
+	margin: 20px;
+    position: center;
+    text-align: center;
+}
+.menu-area li {
+	display: inline-block;
+	margin: 0 5px;
+	
+}
+.menu-area li a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 25px;
+}
+.menu-area li a:hover {
+	color: #038234;
+}
+header .welcome-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.welcome-text h2 {
+	color: #fff;
+	font-size: 60px;
+	margin: 0;
+	font-family: 'Times New Roman', Times, serif, 'Times New Roman', Times, serif, 
+
+	
+}
+
+.btn {
+	background: transparent;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 10px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	display: inline-block;
+	margin-top: 1px;
+	border: 2px solid #fff;
+
+}
+.btn:hover {
+	background: #ffebcd;
+	color: #000;
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.welcome-text p {
+		width: 95%;
+	}
+}
+@media (max-width: 767px) {
+	.logo {
+		float: none;
+		text-align: center;
+        margin: 5px 0;
+		font-size: 23px;
+		height: 45px;
+		line-height: 45px;
+	}
+	.menu-area {
+		float: none;
+		text-align: center;
+		margin: 0;
+	}
+	.menu-area li {
+		margin: 0;
+	}
+	.menu-area li a {
+		padding: 5px 2px;
+		font-size: 12px;
+	}
+	
+	.nav-area {
+		height: 90px;
+	}
+	.welcome-text h2 {
+		font-size: 30px;
+		margin-bottom: 18px;
+		-webkit-text-stroke: 1px #fff;
+	}
+	.welcome-text p {
+		width: 90%;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+}
